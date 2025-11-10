@@ -1,4 +1,4 @@
-import TodoItem from './TodoItem';import TodoItem from './TodoItem';import TodoItem from './TodoItem';import TodoItem from './TodoItem';import TodoItem from './TodoItem';import TodoItem from './TodoItem';import TodoItem from './TodoItem';import TodoItem from './TodoItem';
+import TodoItem from './TodoItem';import TodoItem from './TodoItem';import TodoItem from './TodoItem';import TodoItem from './TodoItem';import TodoItem from './TodoItem';import TodoItem from './TodoItem';import TodoItem from './TodoItem';import TodoItem from './TodoItem';import TodoItem from './TodoItem';
 
 
 
@@ -14,6 +14,21 @@ export default function TodoList({ todos, onToggle, onDelete }) {
 
           key={todo.id}
 
+          todo={todo}    <ul className="todo-list">export default function TodoList({ todos, onToggle, onDelete }) {
+
+          onToggle={onToggle}
+
+          onDelete={onDelete}      {todos.map(todo => (
+
+        />
+
+      ))}        <TodoItem  return (
+
+    </ul>
+
+  );          key={todo.id}
+
+}
           todo={todo}    <ul className="todo-list">export default function TodoList({ todos, onToggle, onDelete }) {
 
           onToggle={onToggle}
