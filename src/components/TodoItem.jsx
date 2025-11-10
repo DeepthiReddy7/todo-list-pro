@@ -1,11 +1,18 @@
-export default function TodoItem({ todo, onToggle, onDelete }) {export default function TodoItem({ todo, onToggle, onDelete }) {export default function TodoItem({ todo, onToggle, onDelete }) {
+export default function TodoItem({ todo, onToggle, onDelete }) {export default function TodoItem({ todo, onToggle, onDelete }) {export default function TodoItem({ todo, onToggle, onDelete }) {export default function TodoItem({ todo, onToggle, onDelete }) {
 
   return (
 
-    <li className={`todo-item ${todo.done ? 'done' : ''}`}>  return (  return (
+    <li className={`todo-item ${todo.done ? 'done' : ''}`}>  return (
 
-      <span onClick={() => onToggle(todo.id)}>
+      <span onClick={() => onToggle(todo.id)}>{todo.text}</span>
 
+      <button onClick={() => onDelete(todo.id)} className="delete-btn">×</button>    <li className={`todo-item ${todo.done ? 'done' : ''}`}>  return (  return (
+
+    </li>
+
+  );      <span onClick={() => onToggle(todo.id)}>
+
+}
         {todo.text}    <li className={`todo-item ${todo.done ? 'done' : ''}`}>    <li className={`todo-item ${todo.done ? 'done' : ''}`}>
 
       </span>
